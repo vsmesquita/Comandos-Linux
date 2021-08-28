@@ -1,0 +1,83 @@
+	
+<--------------------------------==== COMANDOS UTEIS PARA LINUX  ====-------------------------------->
+
+
+	pwd ⇢ Descobrir diretorio
+	date ⇢ ver a hora do sistema   date "+%d de %B de %Y"
+	ls ⇢ ver a lista de arquivos do diretório
+	echo ⇢ mensagens
+	cat ⇢ ler o arquivo
+	clear ⇢ limpar a tela
+	ls ⇢ listar 
+	ls * ⇢ Mostra as pasta e o que tem dentro delas
+	ls -L ⇢ mostrar todos os arquivos em lista
+	ls -La ⇢ mostrar todos os arquivos em lista + arquivos ocultos
+	man ⇢ comando que ensina mais sobre o comando ex: man ls, vai te mostrar tudo que o ls tem
+	Q ⇢ sair do "man"
+	echo "texto" > arquivo.txt ⇢ cria um arquivo .txt com a frase texto dentro
+	echo "texto2" >> arquivo.txt ⇢ vai adicionar mais uma linha dentro do arquivo.txt, se colocar apenas uma ">" ele vai sobscrever o arquivo
+	-q ⇢  quiet
+	-v ⇢  verbouse
+
+<--------------------------------==== LER, EDITAR E NAVEGAR  ====-------------------------------->
+
+	vi arquivo.txt ⇢  ler o arquivo
+	i ⇢  para alterar o arquivo
+	ESC ⇢  para voltar ao modo de navegação
+	:w + ENTER ⇢  para salvar
+	:q + ENTER ⇢   para sair
+	x ⇢  remove caracteres EX 10 + X remove 10 caracteres
+	:wq + ENTER ⇢   salvar e sair
+	dd ⇢  remove linha por completo
+	:q! ⇢  sair sem salvar
+	G ⇢  maiusculo vai para a ultima linha.
+	5 + G ⇢  vai para linha 5
+	/palavra + ENTER ⇢  para procurar a palavra
+	Shift + g 30s ⇢  para ir para linha 30
+	6yy ⇢  para copiar 6 linhas
+
+	head arquivo.txt ⇢  ler arquivo
+	hear -n 3 arquivo.txt ⇢ tras somente as 3 primeiras linhas
+	tail arquivo.txt ⇢  ultimas linhas do arquivo
+	tail -n 3 arquivo.txt ⇢  tras somente as 3 ultimas linhas
+l	ess arquivo.txt ⇢  para fazer a leitura do arquivo
+
+
+<--------------------------------==== IR PARA LOCAL DESEJADO ====-------------------------------->
+
+	cd downloads/ ⇢ entrar na pasta downloads
+	cd .. ⇢ voltar 
+
+<--------------------------------==== PARA CRIAR PASTAS ====-------------------------------->
+
+	mkdir ⇢ cria uma pasta
+
+<--------------------------------==== PARA REMOVER DIRETORIOS ====-------------------------------->
+
+	rmdir ⇢ deleta a pasta ex: "rmdir downlods" porem não pode existir nada dentro.
+	rm -r ⇢ deleta tudo sem dó ex: "rm -r downloads" um por um
+	rm -rf ⇢ apaga sem dó nem piedade
+
+<--------------------------------==== PARA COMPACTAR UM ARQUIVO EM ZIP ====-------------------------------->
+
+	zip -r nome.zip pasta/ ⇢ compactar um arquivo em zip
+	unzip nome.zip ⇢ para descompactar o arquivo zip
+	unzip -q nome.zip ⇢ para descompactar mas nao falar o que tem dentro do arquivo
+	unzip -rq nome.zip ⇢ para descompactar e nao mostrar o que tem dentro do arquivo
+	unzip -l nome.zip ⇢ para ver o que tem dentro do arquivo
+
+<--------------------------------==== PARA COMPACTAR UM ARQUIVO TAR.GZ ====-------------------------------->
+
+	tar -czf nomepasta.tar.gz nomepasta/ ⇢  compactar
+	tar -cz nomepasta > nomepasta.tar.gz ⇢ compactar
+	tar -xz < nomepasta.tar.gz ⇢ descompactar
+	tar -xzf nomepasta.tar.gz ⇢ descompactar
+	tra -vxzf nomepasta.tar.gz ⇢ descompactar com log  EX: $ tar -cjf work.tar.bz2 workspace/
+
+<--------------------------------==== MUDAR DATA DE ARQUIVO ====-------------------------------->
+
+	touch arquivo ⇢  ele encosta no arquivo e altera a data e hora
+
+
+
+
